@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import '~bootstrap/scss/functions',
+		'~bootstrap/scss/bootstrap',
+        '~bootstrap-vue/src/index',
+		'scss/bootstrap/variables',
+        'scss/abstracts/spacing-helpers',
+        'scss/abstracts/mixins.scss',
+        'scss/variables',
+        'scss/components/btn',
+        'scss/components/dropdown',
+        'scss/icon',
+        'scss/custom',
+        'scss/components/spinner',
+        'scss/template';

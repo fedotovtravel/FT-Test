@@ -1,0 +1,120 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin box-sizing($box-sizing) {
+    -webkit-box-sizing: $box-sizing;
+    -moz-box-sizing: $box-sizing;
+    box-sizing: $box-sizing;
+}
+
+@mixin  block {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+@mixin transition($transition) {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform($transform) {
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -webkit-transform: $transform;
+    transform: $transform;
+}
+
+@mixin animation($animation) {
+    -moz-animation: $animation;
+    -ms-animation: $animation;
+    -webkit-animation: $animation;
+    animation: $animation;
+}
+
+@mixin column-count($column-count) {
+    -webkit-column-count: $column-count;
+    -moz-column-count: $column-count;
+    column-count: $column-count;
+}
+
+@mixin user-select($user-select) {
+    -webkit-user-select: $user-select;
+    -moz-user-select: $user-select;
+    -ms-user-select: $user-select;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	user-select: $user-select;
+}
+
+@mixin text-align($text-align) {
+    text-align: $text-align;
+    text-align-last: $text-align;
+    -ms-text-align-last: $text-align;
+    -moz-text-align-last: $text-align;
+}
+
+@mixin calc($property, $expression) {
+    #{$property}: -moz-calc(#{$expression});
+    #{$property}: -webkit-calc(#{$expression});
+    #{$property}: calc(#{$expression});
+  }
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+      @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+      @content;
+    }
+    @keyframes #{$animation-name} {
+      @content;
+    }
+}
+
+@mixin moz-border($color) {
+    -moz-border-bottom-colors: $color;
+    -moz-border-end-color: $color;
+    -moz-border-top-colors: $color;
+    -moz-border-start-color: $color; 
+}
+
+@mixin auto-img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@mixin display-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin inline-flex {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+@mixin scrollbar-firefox{
+	scrollbar-width: thin;
+	scrollbar-color: #9EC8F9 #EEF3FB;
+}

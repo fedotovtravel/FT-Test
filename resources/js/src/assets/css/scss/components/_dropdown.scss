@@ -1,0 +1,8 @@
+.dropdown-menu.show {
+    display: block;
+    max-height: 300px;
+    overflow: auto;
+    @media (max-width: 640px) {
+        max-width: 300px;
+    }
+}
